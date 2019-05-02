@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -187,6 +188,17 @@
       font-size: 150px;
     }
   }
+  
+  .crop {
+    overflow: hidden;
+	border-top: 1px solid black;
+}
+
+.crop img {
+	
+    margin: -250px 0 0 0;
+}
+ 
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -199,13 +211,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
+      <a class="navbar-brand" style="background-image: url(logo.png); background-size: 44px 44px; background-repeat: no-repeat; padding-left: 55px;
+	  margin: 2px; margin-top: 4px;" href="#myPage">Hashinglabs</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#services">SERVICES</a></li>
-        <li><a href="#portfolio">PRODUCTS</a></li>
+        
         <li><a href="#contact">CONTACT</a></li>
       </ul>
     </div>
@@ -241,7 +254,8 @@
     <div class="col-sm-8">
       <h2>Our Values</h2><br>
       <h4><strong>MISSION:</strong> Our mission is to help bakers with payment/distribution solutions.</h4><br>
-      <p><strong>VISION:</strong> Our vision is to improve quality and reliability of payment/distribution experience. Payment is a very serious task. It should be handled by experts.</p>
+      <h4><strong>VISION:</strong> Our vision is to improve quality and reliability of payment/distribution experience. 
+	  Payment is a very serious task. It should be handled by experts.</h4>
     </div>
   </div>
 </div>
@@ -288,64 +302,15 @@
   </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
-  <h2>Products</h2><br>
-  <h4>What we have created</h4>
-  <div class="row text-center slideanim">
-    <div class="col-sm-12">
-      <div class="thumbnail">
-        <img src="paris.jpg" alt="Paris" width="400" height="300">
-        <p><strong>Tezos Reward Distributor</strong></p>
-        <p>Hashinglabs is the creator of the famous Tezos Reward Distributor. Feel free to use TRD. It is open source and will leave as open source. TRD is not funded by any organization. It is our gift to the community.</p>
-      </div>
-    </div>
-  </div><br>
-  
-  <h2>What our customers say</h2>
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
-      </div>
-      <div class="item">
-        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
-      </div>
-      <div class="item">
-        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-
 
 <!-- Container (Contact Section) -->
-<div id="contact" class="container">
+<div id="contact" class="container-fluid bg-grey">
   <h2 class="text-center">CONTACT</h2>
   <div class="row">
     <div class="col-sm-5">
       <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> İstanbul, Turkey</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> support@hashinglabs.com</p>
     </div>
     <div class="col-sm-7 slideanim">
       <div class="row">
@@ -367,13 +332,14 @@
 </div>
 
 <!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
-
+<div class="crop"> 
+<img src="https://i.pinimg.com/originals/b0/75/fa/b075fa69fbea0bc9a49359dd4fb5a15f.jpg" style="width:100%; top: 200px;">
+</div>
 <footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+  <h3>Hashinglabs.com</h3>
 </footer>
 
 <script>
